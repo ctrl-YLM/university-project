@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body
+            {font-family: 'Times New Roman', Times, serif;
+            background-color: #feedaa;
+            margin: 0;
+            padding: 0;}
+
+        h1
+           {font-size: 40px;
+            margin: 0;
+            font-weight: bold;
+            text-align: center;}
+
+        section
+           { max-width: 500px;
+            min-height: 50px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2) ;}
+
+        p
+          { 
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 30px;}
+
+        form
+           {display: grid;
+            gap: 20px;}
+
+        label
+           {font-weight: bold;
+            font-size: 17px;
+            font-family: 'Times New Roman', Times, serif;}
+
+        select, textarea
+            {box-sizing: border-box;
+            width: 100%;
+            padding: 4px;
+            border: 1px solid #aaa;
+            border-radius: 8px;
+            font-size: 15px;}
+
+        input::placeholder, textarea::placeholder
+        {color: #aaa;
+         font-family: 'Times New Roman', Times, serif;}
+
+        select
+        {
+         font-family: 'Times New Roman', Times, serif;}
+
+        select option:first-child
+        {color: #aaa;}
+
+        option{font-family: 'Times New Roman', Times, serif;}
+
+        textarea
+        {resize: vertical;
+        min-height: 40px;
+        font-family: 'Times New Roman', Times, serif;}
+
+        input[type="text"], input[type="email"] 
+        {padding: 8px;
+         border-radius: 8px;
+         border: 1px solid #aaa;}
+
+        input[type="submit"]
+        {align-items: center; width: 130px; display: block; margin: 0 auto;}
+
+        @media (max-width: 600px) {
+            h1 {font-size: 30px;}
+
+            form {padding: 10px;}
+
+            label, input, select, textarea {font-size: 16px;}
+
+            input[type="submit"] {width: 100%;}}
+
+            section{max-width: 450px}
+
+    </style>
+<script>
+    function validateForm(event) {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const category = document.getElementById("category").value;
+        const message = document.getElementById("message").value;
+
+        if (name === "" || email === "" || category === "select" || message === "") {
+            event.preventDefault(); 
+            alert("Please complete all required fields.");}
+    }
+</script>
+</head>
+<body>
+
+
+<section>
+  <h1>Contact Us</h1>
+    <p>If you have any problem, please fill out the form below, and we'll get back to you as soon as possible.</p>
+    <form action="thankyouprofile.html" method="POST" onsubmit="validateForm(event)">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label for="category">Category</label>
+        <select id="category" name="category">
+            <option value="select">Select a category</option>
+            <option value="login">Login issues</option>
+            <option value="mobile-layout">Layout issues on mobile</option>
+            <option value="broken-links">Broken links</option>
+            <option value="page-load">Page fails to load</option>
+            <option value="other">Other</option>
+        </select>
+
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="6" ></textarea>
+    
+        <input type="submit" value="Send Message">
+
+
+    </form>
+</section>
+
+
+</body>
+</html>
+
+

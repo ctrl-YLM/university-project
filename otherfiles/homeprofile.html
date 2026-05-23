@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="header_footer.css">
+    <style>
+
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .megacontainer{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .supercontainer{
+            
+            width: 70vw;
+            border: 2.5px;
+            border-style: solid;
+            border-radius: 35px;
+            border-color: #494a4a;
+            padding: 15px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+
+            justify-content: center;
+
+            background-color: white;
+        }
+
+        .supercontainer:hover{
+            transform: scale(1.0125);
+            transition: 0.2s ease;
+        }
+
+        .supercontainer:not(:hover){
+            transform: scale(1.0);
+            transition: 0.2s ease;
+        }
+
+        .imagecontainer{
+            display: flex;
+            justify-content:center
+        }
+
+        .imagebig{
+            display: flex;
+            height: 30vw;
+            margin: 10px;
+        }
+
+        .imagebig:hover{
+            transform: scale(1.1);
+            transition: transform 0.2s ease;
+        }
+
+        .imagebig:not(:hover){
+            transform: scale(1.0);
+            transition: transform 0.2s ease;
+        }
+        
+        .image{
+            display: flex;
+            height: 300px;
+            margin: 10px;
+        }
+
+        .image:hover{
+            transform: scale(1.05);
+            transition: transform 0.2s ease;
+        }
+
+        .image:not(:hover) {
+            transform: scale(1.00);
+            transition: transform 0.2s ease;
+        }
+
+        .firstrowcontainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
+
+        @media screen and (max-width: 800px) {
+        .firstrowcontainer {
+            flex-direction: column;
+            justify-self: center;
+        }
+        }
+
+        .secondrowcontainer{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
+
+        @media screen and (max-width: 800px) {
+        .secondrowcontainer {
+            flex-direction: column;
+            justify-self: center;
+        }
+        }
+
+        .yellowbox{
+            display: flex;
+            width: 20vw;
+            height: 15vw;
+            min-height: 200px;
+            min-width: 200px;
+            background-color: #feedaa;
+            margin: auto;
+            border-radius: 35px;
+            padding: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+            font-size: 15px;
+            text-align: center;
+            justify-content: center;
+            vertical-align: text-top;
+            
+
+        }
+        .bluebox{
+            display: flex;
+            width: 20vw;
+            height: 15vw;
+            min-height: 200px;
+            min-width: 200px;
+            background-color: #004aad;
+            margin: auto;
+            border-radius: 35px;
+            padding: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+
+            font-size: 15px;
+            color: white;
+            text-align: center;
+            justify-content: center;
+            vertical-align: text-top;
+        }
+
+        .bluebox:hover {
+            transform: scale(1.075);
+            transition: transform 0.2s ease;
+        }    
+
+        .bluebox:not(:hover) {
+            transform: scale(1.00);
+            transition: transform 0.2s ease;
+        }
+
+        .yellowbox:hover {
+            transform: scale(1.075);
+            transition: transform 0.2s ease;
+        }
+
+        .yellowbox:not(:hover) {
+            transform: scale(1.00);
+            transition: transform 0.2s ease;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="header-footer-wrapper">
+        <header>
+            <a href="homeprofile.html"><img src="Resources/Logo/header.png" style="height: 7vw; max-height: 65px;"></a>
+            <nav>
+                <a href=""><img src="Resources/Logo/download.png" alt="download" style="height: 7vw; max-height: 50px;"></a>
+                <a href="contactprofile.html"><img src="Resources/Logo/contact_us.png" alt="Contact us" style="height: 7vw; max-height: 50px;"></a>
+
+                <a href="account.html"><img src="Resources/Splashart/User.png" alt="profile" style="height: 7vw; max-height: 50px; padding-left: 10px; padding-right: 10px;"></a>
+            </nav>
+        </header>
+    </div>
+
+
+
+    <div class="megacontainer">
+
+        <div class="supercontainer">
+            
+            <h1 style="
+                text-align: center;
+                font-size: 50px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+                ">
+                Journal your <i style="color: #004aad;">every</i> journey
+            </h1>
+
+            <div class="imagecontainer">
+                <div class="image" style="padding-top: 30px;"><img src="Resources/Apps/journal.png" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);"></div>
+                <div class="image"><img src="Resources/Apps/todo.png" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);"></div>
+                <div class="image" style="padding-top: 30px;"><img src="Resources/Apps/calendar.png" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);"></div>
+            </div>
+             
+        </div>
+
+        <div class="supercontainer" style="background-color: #feedaa;">
+            <h1 style=
+            "
+            text-align: center; 
+            font-size: 50px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            "
+            >Journal</h1>
+            <div class="imagecontainer">
+                <div class="imagebig" style="padding-top: 30px;">
+                    <img src="Resources/Apps/journal.png" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+                </div>
+            </div>
+        </div>
+
+        <div class="supercontainer" style="background-color: #eabba3;">
+            <h1 style=
+            "
+            text-align: center; 
+            font-size: 50px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            "
+            >To-Do list</h1>
+            <div class="imagecontainer">
+                <div class="imagebig" style="padding-top: 30px;">
+                    <img src="Resources/Apps/todo.png" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+                </div>
+            </div>
+        </div>
+
+        <div class="supercontainer" style="background-color: #004aad;">
+            <h1 style=
+            "
+            text-align: center; 
+            font-size: 50px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+            color: white;
+            "
+            >Calendar</h1>
+            <div class="imagecontainer">
+                <div class="imagebig" style="padding-top: 30px;">
+                    <img src="Resources/Apps/calendar.png" style="box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+                </div>
+            </div>
+        </div>
+
+        <div class="supercontainer">
+
+            <h1 style="
+                text-align: center;
+                font-size: 50px;
+                margin-top: 10px;
+                margin-bottom: 3px;
+                ">
+                Reviews
+            </h1>
+
+            <p style="
+                text-align: center;
+                margin-top: 0px;
+                margin-bottom: 30px;
+                ">
+                <b>Listen to what our users have to say...</b>
+            </p>
+
+            <div class="firstrowcontainer">
+                <div class="yellowbox">
+                    <p>
+                        <img src="Resources/Splashart/User.png" width="50px">
+                        <br>
+
+                        “A simple, minimalistic <br>
+                        app that just does the <br>
+                        job!” <br> <br>
+                        <b>@Maya2309</b>
+                    </p>
+                </div>
+
+                <div class="bluebox">
+                    <p>
+                        <img src="Resources/Splashart/User.png" width="50px">
+                        <br>
+
+                        “My go-to journaling app. <br>
+                        A clean interface with all the <br>
+                        necessary features I want.”<br><br>
+                        <b>@GaryChow</b>
+                    </p>
+                </div>
+
+                <div class="yellowbox">
+                    <p>
+                        <img src="Resources/Splashart/User.png" width="50px">
+                        <br>
+
+                        “The team at Joury always <br>
+                        listens to their users’ wants <br>
+                        and needs. I requested for a <br>
+                        clean & simple monthly habit <br>
+                        tracker and they delivered!” <br> <br>
+                        <b>@henry.88</b>
+                    </p>
+                </div>
+            </div>
+
+            <div class="secondrowcontainer">
+                <div class="bluebox">
+                    <p>
+                        <img src="Resources/Splashart/User.png" width="50px">
+                        <br>
+
+                        “Im so glad i found this <br>
+                        app. As a writer, it's really <br>
+                        good for jotting down ideas <br>
+                        on the go" <br> <br>
+                        <b>@GeorgeAndwell_1948</b>
+                    </p>
+                </div>
+
+                <div class="yellowbox">
+                    <p>
+                        <img src="Resources/Splashart/User.png" width="50px">
+                        <br>
+
+                        “Aesthetic, yet never <br>
+                        compromising on <br>
+                        functionality.” <br> <br>
+                        
+                        <b>@Thomasthetrain</b>
+                    </p>
+                </div>
+
+                <div class="bluebox">
+                    <p>
+                        <img src="Resources/Splashart/User.png" width="50px">
+                        <br>
+
+                        “Bullet journaling with <br>
+                        Joury changed my life <br>
+                        (for the better).” <br> <br>
+                        
+                        <b>@M0shyy</b>
+                    </p>
+                </div>
+
+            </div>
+        </div>   
+    </div>
+
+    <div class="header-footer-wrapper">
+        <footer>
+            <div class="footer-content">
+                <a href=""><img src="Resources/Logo/language.png" alt="Language"></a>
+                <div class="links">
+                    <a href="about_usprofile.html">About us</a>
+                    <a href="faqprofile.html">FAQ</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+                <div>
+                    <a href=""><img src="Resources/Logo/email.png" alt="email"></a>
+                    <a href=""><img src="Resources/Logo/instagram.png" alt="instagram"></a>
+                </div>
+                <small>
+                    <i>&copy; 2024 Team18 Sunway University, All rights reserved.</i>
+                </small>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

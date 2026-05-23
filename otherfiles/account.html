@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Log in into Joury</title>
+	<style>
+		body{
+			background-color: #feedaa;
+			font-family: 'Times New Roman', Times, serif;
+		}
+		.arrow{
+			width: 50px; 
+			padding-left: 80px;
+			padding-top: 40px;
+			position: absolute;
+			top: 0;
+			z-index: 1000;
+		}
+		.logo{
+			width: 100px;
+		}
+		h2{
+			font-size: 30px;
+		}
+		.content{
+			margin: auto;
+			max-width: 350px;
+			text-align: center;
+			padding-top: 30px;
+			padding-bottom: 5px;
+			margin-top: 50px;
+		}
+		.content2{
+			padding-bottom: 10px;
+			margin: auto;
+			max-width: 350px;
+			margin-bottom: 50px;
+		}
+		.inputbox{
+			width: 250px;
+			height: 30px;
+		}
+		.loginbutton{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+			margin-top: 50px;
+			height: 40px;
+			width: 100px;
+			border-radius: 35px;
+		}
+		.label{
+			text-align: left;
+			padding-left: 45px;
+			font-size: 18px;
+		}
+		p{
+			font-size: 13px;
+		}
+		.ga {
+	        display: block; 
+	        margin: 10px auto; 
+	        width: 200px;
+    	}
+	    section{
+	    	padding-top: 30px;
+	    	margin: auto;
+	    	background-color: white;
+	    	border-radius: 10px;
+	    	width: 430px;
+	    	height: 430px;
+	    	box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+	    	margin-bottom: 50px;
+			margin-top: 100px;
+			border-color: black;
+			border-style: solid;
+	    }
+	    .image:hover{
+	    	transform: scale(1.045);
+	    	transition: transform 0.3s ease;
+	    }
+	</style>
+</head>
+
+<body>
+	<a href="homeprofile.html"><img src="icons/arrow.png" alt="arrow" class="arrow"></a>
+	<br>
+
+	<section>
+		<div class="content">
+			<form action="homeprofile.html" method="POST">
+				<img src="Resources/Splashart/User.png" alt="logo" class="logo">
+
+				<h2>My Account</h2>
+			</form>
+		</div>
+
+		<a href="../homepage.html">
+			<button class="loginbutton" type="button" onclick="">
+				Log out
+			</button>
+		</a>
+	</section>
+
+</body>
+</html>
