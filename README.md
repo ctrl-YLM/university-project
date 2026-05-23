@@ -1,6 +1,6 @@
 # university-project-web-development
 
-# 📔 Journaling App (UI/UX Design Prototype)
+# 📔 Joury (Journaling App) -- UI/UX Design Prototype
 
 A journaling web application developed as part of a university Software Engineering course.  
 This project mainly focuses on **UI/UX design and frontend layout**, with some features currently implemented as UI prototypes (dummy interactions).
