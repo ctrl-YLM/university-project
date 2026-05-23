@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="header_footer.css">
+  <title>FAQ</title>
+  <style>
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1{
+      text-align: center;
+    }
+
+    .faq {
+      max-width: 550px;
+      margin: auto;
+      padding: 10px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0px 30px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .faq-question {
+      cursor: pointer;
+      margin: 0;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0 10px;
+    }
+
+    .faq-answer.open {
+      max-height: 100px;
+      padding: 10px;
+    }
+
+    .faq-question::after {
+      content: '▼'; 
+      font-size: 14px;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-question.open::after {
+      transform: rotate(180deg); 
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="header-footer-wrapper">
+        <header>
+            <a href="../homepage.html"><img src="Resources/Logo/header.png" style="height: 7vw; max-height: 65px;"></a>
+            <nav>
+                <a href=""><img src="Resources/Logo/download.png" alt="download" style="height: 7vw; max-height: 50px;"></a>
+                <a href="contact.html"><img src="Resources/Logo/contact_us.png" alt="Contact us" style="height: 7vw; max-height: 50px;"></a>
+
+                <a href="login.html"><img src="Resources/Logo/login.png" alt="Log in" style="height: 7vw; max-height: 50px;"></a>
+                <a href="signup.html"><img src="Resources/Logo/sign_up.png" alt="Sign up" style="height: 7vw; max-height: 50px;"></a>
+            </nav>
+        </header>
+    </div>
+
+  <h1>FAQs</h1>
+  <section class="faq">
+    <div class="faq-item">
+      <h3 class="faq-question">What is Joury?</h3>
+      <div class="faq-answer">
+        <p>Joury is an application designed to help users document their thoughts, plans, and experiences in an organized and secure way.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">Is the journal app free to use?</h3>
+      <div class="faq-answer">
+        <p>Yes, our journal app is free for all users with a lot of features and advanced customization options.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">How do I create an account?</h3>
+      <div class="faq-answer">
+        <p>Simply click the “Sign Up” button on the menu bar and register by entering your full name, birth of date, email, and password.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">Can I access my journal offline?</h3>
+      <div class="faq-answer">
+        <p>Yes, you can write and save entries offline, and they will sync automatically once you are connected to the internet.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <h3 class="faq-question">How do I report a bug or give feedback?</h3>
+      <div class="faq-answer">
+        <p>Simply click the “Contact Us” button on the menu bar and fill in the form to report a bug or give feedback. </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+
+    document.querySelectorAll('.faq-question').forEach((question) => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+
+        answer.classList.toggle('open');
+        question.classList.toggle('open');
+
+        document.querySelectorAll('.faq-answer').forEach((item) => {
+          if (item !== answer && item.classList.contains('open')) {
+            item.classList.remove('open');
+            item.previousElementSibling.classList.remove('open');
+          }
+        });
+      });
+    });
+  </script>
+
+  <div class="header-footer-wrapper">
+    <footer>
+        <div class="footer-content">
+            <a href=""><img src="./icons/language.png" alt="Language"></a>
+            <div class="links">
+                <a href="about_us.html">About us</a>
+                <a href="faq.html">FAQ</a>
+                <a href="">Terms & Conditions</a>
+                <a href="">Privacy Policy</a>
+            </div>
+            <div>
+                <a href=""><img src="./icons/email.png" alt="email"></a>
+                <a href=""><img src="./icons/instagram.png" alt="instagram"></a>
+            </div>
+            <small>
+                <i>&copy; 2024 Team18 Sunway University, All rights reserved.</i>
+            </small>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
